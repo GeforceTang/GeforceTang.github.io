@@ -99,7 +99,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@gitee.com:Geforce_Tang/GithexoBolgs.git
+  repository: git@gitee.com:Geforce_Tang/geforce_tang.git
   branch: master
 
 # 添加站内搜索
