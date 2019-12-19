@@ -1,0 +1,86 @@
+// Custom styles.
+// Geforce.tang
+// 2019年12月18日 00:21:14
+// 此处注册或重写NexT的css样式。
+// ==================================================
+
+//重写标题的样式
+.posts-expand .post-body {
+  h1 {
+    background: rgb(22, 159, 230)   !important;
+    border-radius: 6px 6px 6px 6px !important;
+    box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+    color: #FFFFFF;
+    font-family: "微软雅黑" , "宋体" , "黑体" ,Arial;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 26px;
+    margin: 15px 0 !important;
+    padding: 5px 0 5px 20px;
+    text-shadow: 2px 2px 3px #222222;
+  }
+  h2 {
+    border-top: 0px solid #fd966f;
+    border-left: 8px solid #fd966f;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-top: 0px;
+    color: #585253;
+    line-height: 35px;
+  }
+  h3 {
+    font-size: 1.35em;
+  }
+  h5,h6,h7 {
+    border-bottom: 0px;
+  }
+}
+
+// 修改标题的大小
+.posts-expand .post-title {
+    font-size: 1.5em;
+}
+
+// 修改代码块的样式
+code {
+    background: #f8f8f8;
+    border-radius: 3px;
+    color: #e65100;
+    padding: 2px 4px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+// 重写页面体字体大小
+.post-body {
+  font-size: $font-size-bodyCustom;
+}
+
+.posts-expand .post-meta {
+  font-size: $font-size-metaCustom;
+}
+
+// 打赏图片太小了，调大为280px
+#qr img {
+  width: 280px;
+}
+
+//RSS样式 ，比较喜欢老版本的样式
+.feed-link {
+  border-top: 1px dotted $grey-light;
+  border-bottom: 1px dotted $grey-light;
+  text-align: center;
+}
+
+.feed-link a {
+  display: block;
+  color: #fc6423;
+  border: none;
+
+  &:hover {
+    background: none;
+    color: darken(#fc6423, 20%);
+
+    i { color: darken(#fc6423, 20%); }
+  }
+}
