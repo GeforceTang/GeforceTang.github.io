@@ -1,20 +1,18 @@
 sudo: false
 language: node_js
 node_js:
-  - 10.15 # use nodejs v10 LTS
+  - 10 # use nodejs v10 LTS
 cache: npm
 install:
   - npm install
-branches:
-  only:
-    - master # build master branch only
 script:
-  - hexo generate # generate static files
+  - hexo clean    # hexo的清理命令
+  - hexo generate # hexo的生成（构建）命令，生成静态文件
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GH_TOKEN
-  keep-history: true
+  provider: pages # 约定 pages 为 GitHub Pages 服务，必须且不可更改
+  skip-cleanup: true  # 必须跳过清理，否则过程中生成的文件（要发布的静态资源）会被清理
+  github-token: $GH_TOKEN # 部署时使用的 token
+  keep-history: true  # 设置为 false 时，使用 `git push --force` 命令覆盖历史记录
   on:
-    branch: master
-  local-dir: public
+    branch: master  # 仅监听 master 分支的变化，才执行构建
+  local-dir: public   # `hexo generate` 命令生成的静态资源所在路径
