@@ -1,7 +1,7 @@
 ---
 title: Java入门学习-JAVA基础
 date: 2019-03-06 19:30:38
-categories: JAVA学习
+categories: JAVA
 tags: JAVA
 ---
 

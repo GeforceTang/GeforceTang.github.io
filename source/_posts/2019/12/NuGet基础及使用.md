@@ -1,15 +1,38 @@
 ---
-title: NuGet的搭建及使用
-tags: NuGet
-categories: .NET学习
-date: 2019-04-18 20:33:48
+title: NuGet基础及使用
+date: 2019-12-20 20:31:18
+categories: .NET技术
+tags:
+  - NuGet
+  - 包管理工具
 ---
 
-
 ## NuGet简介
-什么是NuGet，熟悉JAVA的人应该知道Maven，而NuGet则是.Net平台的“Maven”。
-通俗来讲，NuGet就是一个管理dll的仓库，维护dll的版本。比如我们程序引用了别的部门发布的dll，但是我们发现dll存在问题，于是告知他们进行修复。等他们修复完成之后，可能会把dll发布到svn上或者别的平台，我们手动去下载，替换工程中的dll引用。有了NuGet，只需要在工程中修改下版本号，就完成了上述操作。当然好处不只这么一点，比如dll引用存在依赖项时，NuGet自动帮我们处理掉，简化整个环境搭建的过程。
-https://docs.microsoft.com/zh-cn/nuget/
+要学一个新东西，应从3个方面入手：是什么(what)、能做什么(why)、怎么做(how)，可以直接看 [官方文档](https://docs.microsoft.com/zh-cn/nuget/) 来入手细化学习的。
+
+### 什么是Nuget
+NuGet实际是一个包管理器，相当于Java的Maven、node的npm。通俗来讲，NuGet就是一个dll的仓库管理工具，可以维护dll的版本，解决dll之间的依赖关系，方便dll的发布及项目引用。
+<!--more-->
+
+NuGet包含3块概念：NuGet包、NuGet仓库和NuGet工具，下面逐一进行说明。
+
+#### NuGet包
+官方的说法如下：
+>简单来说，NuGet包是具有`.nupkg`扩展的单个 ZIP 文件，此扩展包含编译代码 (Dll)、与该代码相关的其他文件以及描述性清单（包含包版本号等信息）。
+
+通俗的来讲，我们可以将研发的公共组件（Dll），通过nuget打包成`.nupkg`文件进行发布，而`.nupkg`里面包含了编译代码（Dll）、描述性清单（版本号等）、其他文件（xxx.xml（api文件）、ReadMe.md）、依赖关系等。
+打包完成的`.nupkg`文件
+
+#### NuGet仓库
+
+![nuget](https://docs.microsoft.com/zh-cn/nuget/media/nuget-roles.png)
+
+### NuGet能做什么
+比如我们工程引用了别的部门发布的dll组件，期间我们发现他们发布的新版本存在严重问题，这个情况我们可以降低版本，并告知他们进行修复。等他们修复完成之后，可能会把dll发布到svn上或者别的平台，我们手动去下载，替换工程中的dll引用。有了NuGet，只需要在工程中修改下版本号，就完成了上述操作。当然好处不只这么一点，比如dll引用存在依赖项时，NuGet自动帮我们处理掉，简化整个环境搭建的过程。
+
+### 怎么用NuGet
+命令工具（nuget Cli）、UI工具（Visual Studio）
+
 
 ## 操作使用
 ### Nuget包应用及下载
@@ -28,7 +51,7 @@ Nuget适用于所有.NET项目（.NET Standard、.NET Core、.NET FrameWork）�
 但是Visual Studio 不会自动包含 nuget.exe CLI，必须按照前面所述单独安装，所以不支持对.Net FrameWork平台进行打包，我们需要去官网上下载[NuGet.exe][https://dist.nuget.org/win-x86-commandline/latest/nuget.exe]。
 >注意：NuGet.exe并不是安装包而是执行程序，直接将NuGet.exe放到某个目录下，并配置系统参数Path完成注册。
 
-<!--more-->
+
 
 ## 打包
 ### 创建.nuspec
