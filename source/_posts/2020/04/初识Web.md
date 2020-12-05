@@ -39,6 +39,4 @@ tags:
 ## 分布式Seesion
 1、简单粗暴：存储在客户端Cookie中，但缺点不太多，不安全、客户端限制等。
 2、IPHash：保证某一个客户端IP始终访问一个后端服务器。
-3、Session共享：
-
-# SpringMVC架构
+3、Session共享：通过Redis等实现Session共享。
