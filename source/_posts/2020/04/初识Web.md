@@ -1,7 +1,7 @@
 ---
 title: 初识Web
 date: 2020-04-20 19:55:33
-categories: 技术会周刊
+categories: 技术会刊
 tags:
 ---
 
