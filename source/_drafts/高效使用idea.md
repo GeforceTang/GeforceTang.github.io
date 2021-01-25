@@ -14,7 +14,7 @@ tags:
 6. 复制粘贴一行 ctrl+d
 7. 上下挪动 alt+shirft+上、下
 8. 选择两行 shirft+上、下
-
+<!--more-->
 ### 快速跳转
 1. 跳转行单次   ctrl+左、右
 2. 跳转行号  ctrl+g
