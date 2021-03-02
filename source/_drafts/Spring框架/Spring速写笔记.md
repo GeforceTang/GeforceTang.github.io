@@ -46,6 +46,8 @@ public class BeanTest{
  }
 ```
 
+<!--more-->
+
 ### JAVA配置
 Spring推荐的配置方式，可以极大的减少Spring框架和代码的耦合。
 - @Configuration 申明为Java配置类
