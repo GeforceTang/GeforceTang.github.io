@@ -127,9 +127,84 @@
 #sidebar
   position -webkit-sticky
   position sticky
-  padding 7rem 0 0 0
-  width 220px
+  padding 6.5rem 0 0 0
+  bottom auto
+  right auto
+#sidebar .category-item
+  font-size 1.1rem
+#sidebar .category-collapse
+  font-size 0.9rem
+#sidebar .list-group-item
+  padding .45rem 1.25rem
 
+.sidebar a,
+.sidebar span.exturl 
+  color #555
+
+.sidebar a:hover,
+.sidebar span.exturl:hover 
+  border-bottom-color #222
+  color #222
+.site-overview-wrap 
+  overflow-x hidden
+  overflow-y auto
+  
+.sidebar-inner 
+  /* background #fff */
+  border-radius initial
+  /* box-shadow 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09) */
+  box-sizing border-box
+  color #555
+  opacity 0
+  &.affix 
+    position fixed
+    top $sidebar-offset
+  &.affix-bottom 
+    position absolute
+  
+
+.site-state-item 
+  padding 0 10px
+
+.sidebar-button 
+  border-bottom 1px dotted #ccc
+  border-top 1px dotted #ccc
+  margin-top 10px
+  text-align center
+
+.sidebar-button a 
+  border 0
+  color #fc6423
+  display block
+
+.sidebar-button a:hover 
+  background none
+  border 0
+  color #e34603
+
+.sidebar-button a:hover .fa 
+  color #e34603
+
+.site-author-image 
+  border 1px solid #eee
+  display block
+  height auto
+  margin 0 auto
+  max-width 120px
+  padding 2px
+  border-radius 50%
+.site-author-name 
+  color #222
+  font-weight 600
+  margin 0
+  text-align center
+.site-description 
+  color #999
+  font-size 0.8125em
+  margin-top 0
+  text-align center
+
+  
 // toc
 
 #toc
