@@ -426,7 +426,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: /img/default.png
+  banner_img: /img/background.png
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
@@ -565,6 +565,19 @@ post:
     # 是否使用相对时间表示，比如："3 天前"
     # If true, it will be a relative time, such as: "3 days ago"
     relative: false
+
+  sidebar: 
+    enable: true
+    # Sidebar Avatar
+    avatar:
+      # Replace the default image and set the url here.
+      url: /images/Avatar.jpg #/images/avatar.gif
+      # If true, the avatar will be dispalyed in circle.
+      rounded: ture
+      # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
+      opacity: 0.97
+      # If true, the avatar will be rotated with the cursor.
+      rotated: false
 
   # 文章右侧目录
   # Table of contents (TOC)
