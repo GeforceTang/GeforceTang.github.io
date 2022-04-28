@@ -8,7 +8,7 @@ tags:
 ### 文件目录浏览
 1. cd 切换目录
 ``` bash
-$ cd destination  #通过相对路径进入某个文件夹
+$ cd destination  #通过相对路径进入某个文件夹
 $ cd ~ #进入用户主目录
 $ cd / #进入系统根目录
 $ cd .. #返回父级文件夹
@@ -63,20 +63,20 @@ $ ls !dest[a-i]ame   #!：排除
 $ touch filename  #创建文件
 $ touch filename  #如果文件已经存在，则更新修改时间
 $ touch -a filename  #如果文件已经存在，则更新访问时间
-$ ls -l --time=atime test_one   #查看文件的访问时间
+$ ls -l --time=atime test_one   #查看文件的访问时间
 ```
 
 2. cp 复制文件
 ``` bash
-$ cp sourcefile  destfile   #复制文件到文件
-$ cp -i sourcefile  destfile  #复制文件到，如果文件已经存在则提醒是否覆盖
-$ cp sourcefile  destdir/   #复制文件到目录
-$ cp sourcefile  .   #将指定文件路径复制文件到当前目录
+$ cp sourcefile  destfile   #复制文件到文件
+$ cp -i sourcefile  destfile  #复制文件到，如果文件已经存在则提醒是否覆盖
+$ cp sourcefile  destdir/   #复制文件到目录
+$ cp sourcefile  .   #将指定文件路径复制文件到当前目录
 ```
 对于复制目录，可以使用`-R`
 ``` bash
-$ cp -R Scripts/  Mod_Scripts   #复制目录到指定目录
-$ cp -R *cripts/  Mod_Scripts   #使用通配符复制目录到指定目录
+$ cp -R Scripts/  Mod_Scripts   #复制目录到指定目录
+$ cp -R *cripts/  Mod_Scripts   #使用通配符复制目录到指定目录
 ```
 
 3. ln 链接文件
@@ -99,4 +99,4 @@ $ ln targetfile linkfile   #使用ln 创建赢链接
 
 
 ## SED使用
-语法：sed options script file
+语法：sed options script file
